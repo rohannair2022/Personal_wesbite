@@ -1,0 +1,600 @@
+body {
+  background-color: black;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* About Me Section CSS Starts here*/
+.aboutme-section {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.aboutme-container {
+  display: flex;
+  border-radius: 2%;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  height: 600px;
+  background-color: #323232;
+  overflow: auto;
+  margin: 20px;
+  cursor: text;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.aboutme-text {
+  color: greenyellow;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+input {
+  border: none;
+  background-color: unset;
+  color: rgb(238, 238, 238);
+  width: 100%;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: unset;
+}
+
+.type {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.type2 {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.path {
+  color: white;
+}
+
+.error {
+  color: red;
+}
+
+/* Project Section CSS starts here*/
+
+@media (width < 900px) {
+  .topnav {
+    overflow: hidden;
+  }
+  .intro-section {
+    background-color: black;
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .intro-inner {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .intro-pfp {
+    width: 70%;
+    height: 70%;
+    margin-bottom: -80px;
+  }
+
+  .intro-text {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    margin: 20;
+    text-align: center;
+  }
+
+  .header {
+    color: white;
+    font-size: 40px;
+    text-shadow: 0 0 6px grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .tailer {
+    color: grey;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .medium-section {
+    background-color: black;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    margin: 0;
+    margin-bottom: 20;
+    padding: 0;
+  }
+
+  .medium-section-inner {
+    background-color: white;
+    border-radius: 2%;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 20;
+  }
+
+  .medium-text {
+    margin: 30;
+  }
+
+  a:hover {
+    opacity: 50%;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  /* Slideshow container */
+  .medium-slideshow {
+    margin: 20;
+    margin-top: 60px;
+    max-width: 1200px;
+    position: relative;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 5px;
+    margin-top: -22px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: white;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0px 2px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: black;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .project-section {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    margin-top: 10%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+  }
+
+  .project-info {
+    background-color: black;
+    width: 1100px;
+    height: 600px;
+    border-radius: 2%;
+    grid-template-columns: 33% 33% 33%;
+    display: block;
+    margin: 20;
+  }
+
+  .project1 {
+    grid-template-columns: 30% 5% 65%;
+    display: block;
+    background-color: #808080;
+    height: 100%;
+    width: 100%;
+    border-radius: 2%;
+    margin-bottom: 10px;
+  }
+
+  .project2 {
+    grid-template-columns: 30% 5% 65%;
+    display: block;
+    background-color: #b2beb5;
+    height: 100%;
+    width: 100%;
+    border-radius: 2%;
+    margin-bottom: 10px;
+  }
+
+  .project-image {
+    width: 40%;
+    height: 20%;
+  }
+
+  .social-media {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .v_line {
+    width: 100%;
+    height: 4px;
+    background-color: #606060;
+  }
+}
+
+@media (width >= 900px) {
+  .topnav {
+    overflow: hidden;
+    padding-left: 40%;
+  }
+  .intro-section {
+    background-color: black;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    color: white;
+    font-size: 80px;
+    text-shadow: 0 0 6px grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .tailer {
+    color: grey;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .intro-inner {
+    background-color: black;
+    width: 1100px;
+    height: 600px;
+    grid-template-columns: 50% 50%;
+    display: grid;
+  }
+
+  .profile-image {
+    width: 80%;
+    height: 80%;
+  }
+
+  .intro-pfp {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .intro-text {
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+  }
+
+  .social-media1 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .medium-section {
+    background-color: black;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .medium-section-inner {
+    margin-top: -20px;
+    background-color: white;
+    border-radius: 2%;
+    height: 400px;
+    width: 1100px;
+    grid-template-columns: 50% 50%;
+    display: grid;
+    margin: 20;
+  }
+
+  .medium-text {
+    margin-left: 100px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-shadow: 0 0 2px grey;
+    padding-top: 150px;
+    width: 60%;
+  }
+
+  a:hover {
+    opacity: 50%;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  /* Slideshow container */
+  .medium-slideshow {
+    margin-left: 50px;
+    margin-top: 60px;
+    max-width: 1200px;
+    position: relative;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 5px;
+    margin-top: -22px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: white;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0px 2px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: black;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .project-section {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-info {
+    background-color: black;
+    width: 1100px;
+    height: 600px;
+    border-radius: 2%;
+    grid-template-columns: 33% 33% 33%;
+    display: block;
+    margin: 20;
+  }
+
+  .project1 {
+    grid-template-columns: 35% 5% 60%;
+    display: grid;
+    background-color: #808080;
+    height: 60%;
+    width: 100%;
+    border-radius: 2%;
+    margin-bottom: 10px;
+  }
+
+  .project2 {
+    grid-template-columns: 35% 5% 60%;
+    display: grid;
+    background-color: #b2beb5;
+    height: 60%;
+    width: 100%;
+    border-radius: 2%;
+    margin-bottom: 10px;
+  }
+
+  .project-image {
+    width: 70%;
+    height: 50%;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+
+  .social-media {
+    margin-left: 40%;
+    margin-right: 40%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .v_line {
+    height: 220px;
+    width: 4px;
+    margin-top: 80px;
+    background-color: #606060;
+  }
+}
