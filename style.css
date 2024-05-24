@@ -126,6 +126,7 @@ input:focus {
     width: 100%;
     height: 80%;
     margin: 0;
+    margin-bottom:40px;
     padding: 0;
   }
 
