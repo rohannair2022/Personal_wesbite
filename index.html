@@ -9,8 +9,22 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        background-image: url("images/bg.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        backdrop-filter: blur(15px);
+      }
+    </style>
   </head>
-  <body style="background-color: #282525">
+  <body style="background-color: #18141c;">
     <div class="container-fluid mb-4 mt-5">
       <div class="row mb-4">
         <div class="col-sm-12 col-md-3"></div>
@@ -302,7 +316,6 @@
                     <li>Designed an API architecture that processes CSV files, returning a ZIP file containing the preprocessed CSV data.</li>
                     <li>Implemented BDD testing with Behave, using Gherkin syntax to write test cases, and leveraged tools like Selenium and Beautiful Soup for comprehensive testing.</li>
                 </ul>
-
               </p>
             </div>
           </div>
